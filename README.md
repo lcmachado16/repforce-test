@@ -20,3 +20,6 @@ A barra de filtros deve ter:
 Os filtros devem funcionar em conjunto (combinados) e atualizar a listagem em tempo real. O
 estado dos filtros deve estar refletido na URL (query params) para que a navegação seja restaurável.
 ```
+
+# O que está instalado até o momento
+`npm create vite@latest frontend -- --template react-ts` 
