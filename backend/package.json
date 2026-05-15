@@ -1,5 +1,8 @@
 {
   "scripts": {
     "dev": "ts-node-dev --respawn src/server.ts"
+    },
+  "dependencies": {
+    "@repforce/shared": "*"
   }
 }
