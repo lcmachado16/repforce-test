@@ -1,5 +1,6 @@
-// backend/src/data/products.ts
-export const products = [
+import { type Product } from '@repforce/shared' // vem do shared
+
+export const products: Product[] = [
   {
     "id": "prod-001",
     "title": "Notebook Empresarial X14",
