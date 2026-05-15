@@ -1,8 +1,12 @@
-import { ProductGrid } from "@/components/ProductGrid";
+import { ProductGrid } from "../components/ProductGrid";
 
-// pages/CatalogPage.tsx
+import { useProducts } from "../hooks/useProducts";
+
 export function CatalogPage() {
+  const { data: products, isLoading} = useProducts();
 
+  // TODO: melhorar loading state
+  if(isLoading) return <div>Loading...</div>
 
   return (
     <div>
@@ -12,7 +16,8 @@ export function CatalogPage() {
 
       <main className="bg-[#50d71e]">
         {/* filter  */}
-         <ProductGrid />
+        <h1> Hello World</h1>
+         <ProductGrid products={products ?? []} />
         {/*  paginacao */}
       </main>
     </div>
