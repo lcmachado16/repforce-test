@@ -10,7 +10,7 @@ export function CatalogPage() {
         <h1>Catálogo Repforce</h1>
       </header>
 
-      <main>
+      <main className="bg-[#50d71e]">
         {/* filter  */}
          <ProductGrid />
         {/*  paginacao */}
