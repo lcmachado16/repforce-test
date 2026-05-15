@@ -1,8 +1,12 @@
 import { ProductGrid } from "@/components/ProductGrid";
 
-// pages/CatalogPage.tsx
-export function CatalogPage() {
+import { useProducts } from "hooks/useProducts";
 
+export function CatalogPage() {
+  const { data: products } = useProducts();
+
+  // TODO: melhorar loading state
+  if(!products) return <div>Loading...</div>
 
   return (
     <div>
