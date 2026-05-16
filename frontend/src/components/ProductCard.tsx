@@ -1,3 +1,5 @@
+// import { Link } from "@tanstack/react-router";
+import { Link } from "@tanstack/react-router";
 import { Card } from "../../@/components/ui/card";
 import { type Product } from '@repforce/shared' // vem do shared
 
@@ -21,12 +23,10 @@ export function ProductCard({ product }: { product: Product }) {
                 <img src={product.thumbnail} alt={product.title} className="w-full h-48 object-cover" />
             )} 
 
+            <Link to={`/products/${product.id}`}>Ver detalhes</Link>
         </Card>
 
-        /* 
-    Cada card mostra: thumbnail, título, categoria, marca, preço formatado em BRL (R$
-            4.599,90), badge de estoque (Em estoque / Esgotado).
-        */
+
 
     )
 }
